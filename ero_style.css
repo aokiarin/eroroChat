@@ -113,6 +113,7 @@ ul {
 #info {
     padding: 15px 10px;
     background: #E22FAA;
+    color: #FFFFFF;
 }
 #user_name p,
 #user_cnt p {
@@ -127,7 +128,7 @@ ul {
     font-size: 1em;
     border-radius: 5px;
     display: inline-block;
-    padding: .65em 4em;
+//    padding: .65em 4em;
     background: -webkit-linear-gradient(#fe5f95 , #ff3f7f);
     background: linear-gradient(#fe5f95 , #ff3f7f);
     border: 1px solid #fe3276;

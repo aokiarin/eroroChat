@@ -121,10 +121,14 @@ socket.on('get id', function(id) {
 });
 </script>
   <div id="info">
+    <!-- ハートおっきいの -->
+    <div class="heart-big"></div>
     <div id="user_name">あなたのID&nbsp;:&nbsp;<p></p></div>
     <div id="user_cnt">アクティブユーザ&nbsp;:&nbsp;<p></p></div>
   </div>
   <ul id="message"></ul>
+  <!-- ピカピカハート -->
+  <div class="heart"></div>
   <div id="controls">
     <form action="">
     <select name="channel" id="channel">
@@ -133,7 +137,7 @@ socket.on('get id', function(id) {
       <option value="kenta_bot">kentaのbotチャンネル</option>
     </select>
 	<div class="text_button">
-		<input type="text" id="msj" class="msg_textarea" placeholder="メッセージを入力してください...">
+		<input type="text" id="msj" class="msg_textarea" placeholder="メッセージを入力してください...">&nbsp;&nbsp;&nbsp;
 		<input class="button" type="submit" value="送信" class="send_button">
 	</div>
     </form> 
