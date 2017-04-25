@@ -1,6 +1,6 @@
 
 -- データベース名を記述
--- USE heroku_6c1d62805e0ec8f;
+-- USE heroku_85b73609d6d4316;
 
 SET FOREIGN_KEY_CHECKS=0;
 
