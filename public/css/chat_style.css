@@ -1,19 +1,27 @@
-//
-//  ero_style.css
-//  
-//
-//  Created by 青木亜琳 on 2017/04/08.
-//
-//
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
+/*
+  ero_style.css
+  TODO: 複数ファイルに分ける？分けたら共通部分はどうする？
+
+  Created	by 青木亜琳
+  			on 2017/04/08.
+  Updated	by 
+ 			on 
+ */
+
+/******************************************************
+ * ここから初期化
+ ******************************************************/
+html,	body,	div,	span,	applet,	object,	iframe,
+h1,		h2,		h3,		h4,		h5,		h6,		p,
+blockquote,		pre,	a,		abbr,	acronym,
+address,		big,	cite,	code,	del,	dfn,
+em,		font,	img,	ins,	kbd,	q,		s,
+samp,	small,	strike, strong,	sub,	sup,	tt,
+var		,i		b,		u,		i,		center,	dl,
+dt,		dd,		ol,		ul,		li,		fieldset,
+form,	label,	legend,	table,	caption,tbody,	tfoot,
+thead,	tr,		th,		td
+{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -55,7 +63,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-//ここまで
+/******************************************************
+ * ここまで初期化
+ ******************************************************/
 
 * {
     padding: 0;
@@ -72,9 +82,10 @@ ul {
     padding: 20px;
     background: #EFE0FF;
     color: magenta;
+	margin-bottom: 120px;
 }
 #controls {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     left: 0px;
     padding: 20px;
@@ -113,7 +124,6 @@ ul {
 #info {
     padding: 15px 10px;
     background: #E22FAA;
-    color: #FFFFFF;
 }
 #user_name p,
 #user_cnt p {
@@ -128,7 +138,7 @@ ul {
     font-size: 1em;
     border-radius: 5px;
     display: inline-block;
-//    padding: .65em 4em;
+    padding: .65em 4em;
     background: -webkit-linear-gradient(#fe5f95 , #ff3f7f);
     background: linear-gradient(#fe5f95 , #ff3f7f);
     border: 1px solid #fe3276;
@@ -146,6 +156,7 @@ ul {
 }
 .text_button {
 	width:100%;
+    background:#ffffff;
 }
 .msg_textarea {
 	width:70%;
@@ -164,6 +175,9 @@ ul {
     15% { transform: scale(1, 1); }
 }
 
+/******************************************************
+ * キラキラハート
+ ******************************************************/
 .heart {
     width: 100px;
     height: 100px;
@@ -177,6 +191,9 @@ ul {
     transition: background 1s steps(28);
 }
 
+/******************************************************
+ * 大きいハート
+ ******************************************************/
 .heart-big.icon {
     color: #000;
     position: absolute;
@@ -189,7 +206,6 @@ ul {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-
 .heart-big{
     position:relative;
     padding-top:20px;
@@ -216,7 +232,9 @@ ul {
     border-radius:100px 100px 0 0;
 }
 
-/* 左からの吹き出し */
+/******************************************************
+ * 左からの吹き出し
+ ******************************************************/
 .left_balloon {
     position: relative;
     background: #fff;
@@ -227,7 +245,6 @@ ul {
     margin-right: 20%;
     clear: both;
     max-width: 500px;
-    float: left;
 }
 .left_balloon:after,
 .left_balloon:before {
@@ -253,7 +270,9 @@ ul {
     margin-top: -8px;
 }
 
-/* 右からの吹き出し */
+/******************************************************
+ * 右からの吹き出し
+ ******************************************************/
 .right_balloon {
     position: relative;
     background: #9370DB;
@@ -264,7 +283,6 @@ ul {
     margin-left: 20%;
     clear: both;
     max-width: 500px;
-    float: right;
 }
 .right_balloon:after,
 .right_balloon:before {
@@ -294,3 +312,63 @@ ul {
 .clear_balloon{
     clear: both;
 }
+
+/******************************************************
+ * アイコン（white）
+ ******************************************************/
+.profile.icon {
+    color: #000;
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 11px;
+    width: 14px;
+    height: 6px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px transparent;
+    border-radius: 6px 6px 0 0;
+}
+
+.profile.icon:before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: -10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+}
+
+/******************************************************
+ * アイコン（black）
+ ******************************************************/
+.profile-solid.icon {
+    color: #000;
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 11px;
+    width: 14px;
+    height: 6px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px transparent;
+    background-color: currentColor;
+    border-radius: 6px 6px 0 0;
+}
+
+.profile-solid.icon:before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: -10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+    background-color: currentColor;
+}
+
+
